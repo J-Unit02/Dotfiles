@@ -1,0 +1,15 @@
+#+title: my dotfiles
+
+For a terrible experienc clone into $HOME using git:
+
+#+begin_src shell
+$ git clone https://github.com/mul7y/Dotfiles.git
+$ cd Dotfiles
+#+end_src
+
+then use GNU stow to create symlinks automatically:
+
+
+#+begin_src shell
+$ stow .
+#+end_src
