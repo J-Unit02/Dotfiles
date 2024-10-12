@@ -1,8 +1,7 @@
 #+title: Rofi Config
 #+PROPERTY: header-args :tangle config.rasi
 
-* Based on a config by Aditya Shakya ([['https://github.com/adi1090x'][adi1090x]]
-)
+** Based on a config by Aditya Shakya [[https://github.com/adi1090x][adi1090x]]
 
 
 * Configuration
