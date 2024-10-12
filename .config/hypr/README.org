@@ -1,4 +1,4 @@
-#+title: Hypr Configo
+#+title: Hypr Config
 #+property: header-args :tangle hyprland.conf
 
 * TOC :toc:
