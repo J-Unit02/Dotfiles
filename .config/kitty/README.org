@@ -1,3 +1,19 @@
+#+title: Kitty Config
+#+PROPERTY: header-args :tangle kitty.conf
+
+* Table of contents :toc:
+- [[#font][Font]]
+- [[#window-settings][Window settings]]
+- [[#colors][Colors]]
+- [[#cursor][Cursor]]
+- [[#selection-highlight][Selection highlight]]
+- [[#window-borders][Window borders]]
+- [[#tab-bar][Tab bar]]
+- [[#title-bar][Title bar]]
+-  [[#keybindings][Keybindings]]
+
+* Font
+#+begin_src conf
 font_family JetBrainsMono Nerd Font
 bold_font        auto
 italic_font      auto
@@ -5,10 +21,16 @@ bold_italic_font auto
 
 font_size 12
 background_opacity 0.9
+#+end_src
 
+* Window settings
+#+begin_src conf
 window_padding_width 10
 confirm_os_window_close 0
+#+end_src
 
+* Colors
+#+begin_src conf
 # Special
 background #14151e
 foreground #98b0d3
@@ -46,17 +68,31 @@ color7  #cbced3
 color15 #d0d3d8
 
 url color #5de4c7
+#+end_src
 
+* Cursor
+#+begin_src conf
 cursor #cbced3
 cursor_text_color #a5b6cf
+#+end_src
 
+* Selection highlight
+#+begin_src conf
 selection_foreground #a5b6cf
 selection_background #1c1e27
+#+end_src
 
+
+
+* Window borders
+#+begin_src conf
 active_border_color #3d59a1
 inactive_border_color #101014
 bell_border_color #fffac2
+#+end_src
 
+* Tab bar
+#+begin_src conf
 tab_bar_style fade
 tab_fade 1
 active_tab_foreground   #3d59a1
@@ -66,8 +102,15 @@ inactive_tab_foreground #787c99
 inactive_tab_background #16161e
 inactive_tab_font_style bold
 tab_bar_background #101014
+#+end_src
 
+* Title bar
+#+begin_src conf
 macos_titlebar_color #16161e
+#+end_src
 
+*  Keybindings
+#+begin_src conf
 map kitty_mod+t     new_tab_with_cwd
 map kitty_mod+shift+p         paste_from_clipboard
+#+end_src
