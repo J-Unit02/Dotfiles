@@ -48,7 +48,6 @@ exec-once = hyprpaper
 #exec-once = swaync
 exec-once = gnome-keyring-daemon --start --components=secrets
 exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 || /usr/libexec/polkit-gnome-authentication-agent-1
-exec-once = wl-paste --watch cliphist store
 #+END_SRC
 
 * Plugins
@@ -166,19 +165,15 @@ input {
     touchpad {
         natural_scroll = false
     }
-    sensitivity = -1.0 # -1.0 - 1.0, 0 means no modification.
+
+    sensitivity = -0.3
     accel_profile=flat
-    force_no_accel=1
+    #force_no_accel=1
 
 }
 
 gestures {
     workspace_swipe = false
-}
-
-device {
-    name = epic-mouse-v1
-    sensitivity = -0.8
 }
 #+end_src
 
@@ -196,7 +191,6 @@ bind = $mainMod, Q, killactive,
 bind = $mainMod, M, exit,
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
-bind = $mainMod SHIFT, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy
 bind = $mainMod, SPACE, exec, killall rofi || rofi -show drun -theme ~/.config/rofi/config.rasi
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, T, togglesplit, # dwindle
