@@ -1,10 +1,28 @@
+cmd + shift - e : yabai -m space --balance
+
 cmd - j : yabai -m window --focus south
 cmd - k : yabai -m window --focus north
 cmd - h : yabai -m window --focus west
 cmd - l : yabai -m window --focus east
 
+cmd - down : yabai -m window --focus south
+cmd - up : yabai -m window --focus north
+cmd - left : yabai -m window --focus west
+cmd - right : yabai -m window --focus east
+
+cmd + shift - j : yabai -m window --swap south
+cmd + shift - k : yabai -m window --swap north
+cmd + shift - h : yabai -m window --swap west
+cmd + shift - l : yabai -m window --swap east
+
+cmd + shift - down : yabai -m window --swap south
+cmd + shift - up : yabai -m window --swap north
+cmd + shift - left : yabai -m window --swap west
+cmd + shift - right : yabai -m window --swap east
+
+
 cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-cmd - e: /Applications/Emacs.app/Contents/MacOS/Emacs ~
+#cmd - e: /Applications/Emacs.app/Contents/MacOS/Emacs ~
 
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
