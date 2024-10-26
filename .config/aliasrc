@@ -1,0 +1,14 @@
+#!/bin/sh
+alias \
+	ka="killall" \
+	g="git" \
+	sdn="sudo shutdown -h now" \
+	r="ranger" \
+	vim="nvim" \
+	v="emacs -nw" \
+	e="emacs -nw" \
+	p="sudo pacman" \
+	mp3="yt-dlp --extract-audio --audio-format mp3" \
+	youtube-dl="yt-dlp" \
+	neofetch="fastfetch --logo-type kitty --logo ".config/profile.jpg" --logo-height "15"" \
+	ls="eza --icons"
