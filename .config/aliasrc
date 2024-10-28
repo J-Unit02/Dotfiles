@@ -44,11 +44,12 @@ IFS=$SAVEIFS
 ### ALIASES
 
 # navigation
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
+alias \
+	..='cd ..' \
+	...='cd ../..' \
+	.3='cd ../../..' \
+	.4='cd ../../../..' \
+	.5='cd ../../../../..'
 
 # eza
 alias ls='eza --icons --color=always --group-directories-first'
@@ -58,14 +59,16 @@ alias p='sudo pacman'
 alias orphan='sudo pacman -Rns $(pacman -Qtdq)'
 
 # flags
-alias df='df -h'
-alias free='free -m'
-alias grep='grep --color=auto'
+alias \
+	df='df -h' \
+	free='free -m' \
+	grep='grep --color=auto'
 
 # system
-alias sdn='sudo shutdown -h now'
-alias ka='killall'
-alias jctl="journalctl -p 3 -xb"
+alias \
+	sdn='sudo shutdown -h now' \
+	ka='killall' \
+	jctl="journalctl -p 3 -xb"
 
 # programs
 alias \
